@@ -18,6 +18,6 @@ In essence, it does this:
 I tested it on Ubuntu 20.04, with EPUBs bought from Bol(dot)com.
 
 There are three reasons why you might want to test it more extensively before depending on it:
-- Ebooks from other sellers might contain more identifying details than just the zip order and timestamps.
+- Ebooks from other sellers might contain more identifying details than just the timestamps and order of the files in the zip.
 - The zip implementation of another OS might not deterministically order the input files of the new zip file.
 - Your OS might track more file metadata fields than just access and modification times (not sure if this exists)
