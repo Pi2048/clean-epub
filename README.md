@@ -1,6 +1,14 @@
+# clean-epub
+
 The excellent [knock](https://github.com/BentonEdmondson/knock) application by Benton Edmondson outputs EPUBs that seem to be DRM-free. However, if you run the application twice on the same ACSM file, the hashes do not match.
 
 This script normalizes EPUB files, and it is specifically written to normalize the output files of knock. It strips away all the differences between different EPUB files for the same book.
+
+## Usage
+
+`./clean-epub.py -i input.epub -o output.epub`
+
+## Details
 
 In essence, it does this:
 - Create a temporary directory, and unzip the input EPUB into it
