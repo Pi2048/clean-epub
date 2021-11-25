@@ -45,8 +45,8 @@ if __name__ == "__main__":
     process.wait()
     os.chdir(cwd)
     if outputfile != '':
-        os.rename(f"{tempdirname}/{tempfilename}", outputfile)
+        shutil.move(f"{tempdirname}/{tempfilename}", outputfile)
     else:
-        os.rename(f"{tempdirname}/{tempfilename}", f"{cwd}/{tempfilename}")
+        shutil.move(f"{tempdirname}/{tempfilename}", f"{cwd}/{tempfilename}")
     # Remove temporary directory
     shutil.rmtree(tempdirname)
